@@ -2,6 +2,7 @@
 :root{
     --main-color: #19c8fa;
     --transpatent-color:rgb(15 116 143 / 70%);
+    --sectionMargin : 5% 0 ;
 }
 /* end variabels */
 
@@ -444,6 +445,7 @@ text-transform: uppercase;
 font-weight: normal;
 position: relative;
 margin-bottom: 4%;
+font-size: 40px;
 }
 
 .mainHeadingFixd h1::before{
@@ -489,7 +491,9 @@ color: #777;
 
 
 /* --------------------------------------- */
-
+.servises{
+    margin: var(--sectionMargin);
+}
 .servises .servContainer{
 /* text-align: center; */
 }
@@ -542,6 +546,95 @@ color: #777;
 
 
 /* end componant 1 serv */
+
+
+
+/* ------ start desgn -------*/
+
+.desgn{
+height: 85vh;
+margin:var(--sectionMargin);
+position: relative;
+background-image: url(../img/9.jpg);
+background-size: cover;
+overflow: hidden;
+display: flex;
+align-items: center;
+}
+.desgn::after{
+    content: "";
+    position: absolute;
+    background-color: #37454793;
+     left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.desgn .phonimg {
+flex: 1;
+position: relative;
+z-index: 2;
+ /* width: 22%; */
+ text-align: center;
+ bottom: -22%;
+
+ } 
+ @media (max-width:767px) {
+    .desgn .phonimg {
+          display: none;
+      } 
+ }
+.desgn .phonimg img {
+/* width: 100%; */
+position: relative;
+/* bottom: -8%; */
+}
+.desgn .text{
+    flex: 1;
+    z-index: 2;
+    position: relative;
+    right: 0;
+    /* top: 50%; */
+    background-color: rgba(19, 97, 126, 0.863);
+    padding: 5% ;
+    color: white;
+    /* width: 55%;   */
+    /* transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%); */
+}
+.desgn .text h2{
+    font-size: 26px;
+    font-weight: normal;
+    margin-bottom: 4%;
+    text-transform: uppercase;
+}
+.desgn .text li{
+    padding: 2% 0;
+    font-size: 17px;
+}
+.desgn .text li i{
+    padding: 0 3% 0 0;
+ }
+
+ /* .desgn .text li::before{
+     content: '\f108';
+     position: relative;
+     top: 1px;
+     font-family: "Font Awsome 5 free";
+     font-weight: 900;
+     margin-right: 3%;
+ } */
+
+
+
+
+
+
+
+/* ------ end desgn ------ */
 
 
 
