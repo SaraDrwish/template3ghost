@@ -596,7 +596,7 @@ position: relative;
     right: 0;
     /* top: 50%; */
     background-color: rgba(19, 97, 126, 0.863);
-    padding: 5% ;
+    padding: 3% ;
     color: white;
     /* width: 55%;   */
     /* transform: translateY(-50%);
@@ -632,9 +632,80 @@ position: relative;
 
 
 
-
-
 /* ------ end desgn ------ */
+
+
+
+/* ------ start portofol ------ */
+
+.portofol{
+ margin: var(--sectionMargin);
+}
+
+
+.portofol .shufl{
+display:flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+gap: 1%;
+}
+.portofol .shufl li{
+    padding: 1%;
+}
+.portofol .shufl .activ{
+    background-color: #19c8fa;
+    color: white;
+    font-weight: bold;
+}
+
+.portofol .imgescontener{
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    flex-basis: 25%;
+
+    margin: 4% 0;
+}
+.portofol .imgescontener .imgbox{
+max-width: 25%;
+max-height: 25%;
+/* margin: 1% 0; */
+}
+
+.portofol .imgescontener .imgbox img{
+    max-width: 100%;
+}
+
+.portofol .imgescontener .imgbox .caption{
+  background-color: white;  
+  text-transform: capitalize;
+}
+
+.portofol .imgescontener .imgbox .caption h4{
+    font-size: 16px;
+    color: #777;
+}
+.portofol .imgescontener .imgbox .caption p{
+   color: var(--main-color); 
+   font-size: 14px;
+}
+
+
+.portofol button{
+    background-color: var(--main-color);
+    color: white;
+    text-transform: capitalize;
+    padding: 1%;
+    text-align: center;
+    border: none;
+}
+
+
+
+
+/* ------ end portofol ------ */
+
 
 
 
