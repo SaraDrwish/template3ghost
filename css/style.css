@@ -1271,6 +1271,22 @@ justify-content:space-between;
     } 
     
 }
+
+/* form{
+    display: flex;
+    width: 500px;
+    min-width:100%;
+position:relative;
+}
+
+input[type= "email"]{
+padding:20px;
+border:1px solid;
+}
+
+
+*/
+
 .pricing .pricisubscripbox .inputsubs{
 position: relative;
 width: 50%;
@@ -1295,6 +1311,8 @@ margin-right: 4%;
 }
 
 .pricing  .pricisubscripbox .inputsubs input{
+    /* width:calc(100% - 130px); */
+    caret-color: #19c8fa;
 background-color: transparent;
 border: none;
 height: 100%;
@@ -1304,7 +1322,11 @@ color: white;
 outline: none;
 cursor: var(--main-color);
 }
+.pricing  .pricisubscripbox .inputsubs input::placeholder{
+ color: white;
+}
 .pricing  .pricisubscripbox .inputsubs button{
+    /* width: 130px; */
 padding: 1% 2%;
 background-color: #19c8fa;
 border: none;
