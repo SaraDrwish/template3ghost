@@ -445,7 +445,7 @@ text-transform: uppercase;
 font-weight: normal;
 position: relative;
 /* margin-bottom: 4%; */
-margin: 4% 0;
+margin: 3% 0;
 font-size: 36px;
 }
 
@@ -483,7 +483,7 @@ font-size: 36px;
 width: 50%;
 /* left: 50%;
 transform:translateX(-50%); */
-margin: 5% auto;
+margin: 4% auto;
 padding: 2% 0;
 max-width: 100%;
 /* عشان في الموب ميطلعش برا المسافه بتاعته */
@@ -1125,6 +1125,183 @@ display: block;
 /* end recoat */
 
 
+
+/* start pricing */
+
+.pricing{
+margin: var(--sectionMargin);
+/* display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center; */
+}
+
+.pricing .container{
+    text-align: center;
+}
+
+.pricing .container p{
+padding: 2%;
+font-size: 19px;
+color: rgb(63, 60, 60);
+}
+.pricing .container button{
+padding: 1.5% 3%;
+border: none;
+background-color: #19c8fa;
+color: white;
+margin-bottom: 2%;
+}
+
+.pricing .pricisubscripbox{
+     margin: var(--sectionMargin);
+     height:40vh;
+     width: 100%;
+     color: white;
+     position: relative;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     /* flex-wrap: wrap; */
+     flex-direction: row;
+     background-image: url(../img/18.jpg);
+     background-size: cover;
+     /* filter:grayscale(50%) ;
+     -webkit-filter:grayscale(50%) ; */
+}
+.pricing .pricisubscripbox::before{
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+background-color:rgba(37, 42, 44, 0.5);
+}
+/* .pricing .container .pricisubscripbox img{
+width: 100%;
+height: 88vh;
+} */
+
+.pricing .container .plans{
+    /* display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-basis: 25%; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(250px , 1fr));
+    gap:30px;
+}
+
+.pricing .container .pricingbox {
+
+background-color: rgb(201, 200, 200);
+padding: 4%;
+/* margin: 1%; */
+/* width: 20%; */
+}
+
+.pricing .pricingbox .numbox{
+
+}
+
+.pricing .pricingbox ul{
+
+}
+
+.pricing .pricingbox button{
+    cursor: pointer;
+border: 2px solid var(--main-color);
+background-color: transparent;
+color:purple;
+margin: 2%;
+}
+
+
+
+
+
+
+
+.pricing  .pricisubscripbox .container{
+display: flex;
+align-items: center;
+justify-content:space-between;
+/* width:88%; */
+/* margin: 3%; */
+}
+.pricing .pricisubscripbox .inputsubs{
+position: relative;
+width: 50%;
+/* left: 0; */
+border: 2px solid white;
+color: white;
+height: 60px;
+display: flex;
+justify-content: flex-start;
+align-items: flex-start;
+margin-right: 4%;
+}
+.pricing .pricisubscripbox .inputsubs i{
+      text-align: center;
+      transform:translateY(100%) ;
+      font-size: 19px;
+      padding: 0 11px 0 25px;
+      -webkit-transform:translateY(100%) ;
+      -moz-transform:translateY(100%) ;
+      -ms-transform:translateY(100%) ;
+      -o-transform:translateY(100%) ;
+}
+
+.pricing  .pricisubscripbox .inputsubs input{
+background-color: transparent;
+border: none;
+height: 100%;
+width: 70%;
+padding: 0 2%;
+color: white;
+outline: none;
+cursor: var(--main-color);
+}
+.pricing  .pricisubscripbox .inputsubs button{
+padding: 1% 2%;
+background-color: #19c8fa;
+border: none;
+font-size: 15px;
+text-transform: uppercase;
+width: 30%;
+height: 100%;
+}
+.pricing .pricisubscripbox .inputp p {
+font-size: 17px;
+line-height:2;
+color: white;
+position: relative;
+/* right: 0; */
+/* width: 100%; */
+text-align: left
+}
+/* mob */
+@media (max-width:767px) {
+
+    .pricing  .pricisubscripbox .container{
+       flex-direction: row;
+       flex-wrap: wrap;
+        flex-basis: 100%;
+        }
+
+        .pricing  .pricisubscripbox .inputsubs{
+          width: 100%;
+          margin-bottom: 5%;
+            }
+
+            .pricing .pricisubscripbox .inputp {
+                width: 100%;
+                }
+
+}
+
+
+
+/* end pricing */
 
 
 
