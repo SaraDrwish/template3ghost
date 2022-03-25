@@ -848,17 +848,22 @@ text-align: center;
 /* start stats */
 
 .stats{
-/* margin: var(--sectionMargin); */
-margin-bottom: 5%;
-/* background-image: url(../img/14.jpg); */
-background-image: url(../img/17.jpg);
-background-repeat: no-repeat;
-/* background-position: 50%; */
-background-size: cover;
-backdrop-filter: 90%;
-text-align: center;
-padding: 7%;
+      /*margin: var(--sectionMargin);*/
+      margin-bottom: 5%;
+      /*background-image: url(../img/14.jpg);*/
+      /*background-image: url(../img/17.jpg);
+      */background-image: url(../img/19.jpg);
+      /*background-image: url(../img/12.jpg); */
+      /*background-position: 50% 30%;*/
+      background-repeat: no-repeat;
+      background-position:50% 65%;
+      /* filter:grayscale(90%); */
+      background-size: cover;
+      backdrop-filter: 90%;
+      text-align: center;
+      padding: 7%;
 }
+
 
 .stats .container {
 display: flex;
@@ -931,13 +936,11 @@ color: white;
 
 .skills{
     margin: var(--sectionMargin);
-
 }
 .skills .container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
 }
 
 /* big screens desktpo */
@@ -956,14 +959,12 @@ color: white;
     text-transform: uppercase;
     font-weight: normal;
     text-align: center;
-
  }
 .skills .container >div > p {
    margin-bottom: 3%;
    line-height: 2;
    color: #777;
    text-align: center;
-
 }
 
 .skills .container .testimon{
@@ -974,7 +975,6 @@ color: white;
    display: flex;
    margin: 5% auto; 
    align-items: center;
- 
 }
 .skills .container .testimon .testmonbox .text{
     padding: 3% 1%; 
@@ -1024,16 +1024,107 @@ align-items: center;
         -ms-border-radius:50% ;
         -o-border-radius:50% ;
 }
-
 .skills .container .testimon .bull .actv{
 background-color: #19c8fa;
 border: none;
+}
+.ourskill .porg-holder{
+margin: 8% 0 ;
+}
+.ourskill .porg-holder h4{
+text-transform: uppercase;
+color: #777;
+margin: 3% 0;
+}
+.ourskill .porg-holder .prof {
+background-color: #777;
+margin: 2% 0;
+height: 22px;
+}
+.ourskill .porg-holder .prof span{
+background-color: #19c8fa;
+display: block;
+height:100%;
+position: relative;
+/* width: 11px; */
+/* z-index: 2; */
+}
+.ourskill .porg-holder .prof span::after{
+    content: attr(data-progress);
+    position: absolute;
+    padding: 4px 7px;
+    background-color: black;
+    color: white;
+    right: -19px;
+    top: -36px;
+    border-radius: 11px;
+    font-size: 12px;
+}
+.ourskill .porg-holder .prof span::before{
+content: "";
+position: absolute;
+right: -8px;
+top: -14px;
+border-style: solid;
+border-width: 7px;
+border-color: black transparent transparent;
+}
 
+/* end skills */
+
+
+/* start recoat */
+
+.recoat{
+margin: var(--sectionMargin);
+color: white;
+background-image: url(../img/quote.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+padding: 5%;
+text-align: center;
+position: relative;
+}
+
+.recoat::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.733);
+    width: 100%;
+    height: 100%;
+}
+.recoat .container{
+    position: relative;
+}
+.recoat .container p {
+font-size: 33px;
+line-height:1.1;
+/* padding: 2% 0; */
+margin: 2% 0;
+display: block;
+}
+.recoat .container p::after {
+    /* content: '\f10d'; */
+    content: close-quote ;
+    /* position: absolute;
+    top: 0;
+    right: 0; */
+    /* font-family: "Font Awsome"; */
+}
+.recoat .container p::before {
+    content: '\f10d';
+    /* font-family: "Font Awsome"; */
+    content: open-quote ;
+    /* position: absolute; */
 }
 
 
 
+/* end recoat */
 
 
 
-/* end skills */
+
+
