@@ -1153,33 +1153,6 @@ color: white;
 margin-bottom: 2%;
 }
 
-.pricing .pricisubscripbox{
-     margin: var(--sectionMargin);
-     height:40vh;
-     width: 100%;
-     color: white;
-     position: relative;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     /* flex-wrap: wrap; */
-     flex-direction: row;
-     background-image: url(../img/18.jpg);
-     background-size: cover;
-     /* filter:grayscale(50%) ;
-     -webkit-filter:grayscale(50%) ; */
-}
-.pricing .pricisubscripbox::before{
-content: "";
-position: absolute;
-width: 100%;
-height: 100%;
-background-color:rgba(37, 42, 44, 0.5);
-}
-/* .pricing .container .pricisubscripbox img{
-width: 100%;
-height: 88vh;
-} */
 .pricing .container .plans{
     /* display: flex;
     justify-content: center;
@@ -1213,7 +1186,7 @@ display:block;
 .pricing  .plans .pricingbox .numbox small{
     position: absolute;
     top: 40px;
-    left: 44px;
+    left: 55px;
     font-size: 22px;
 }
 .pricing  .plans .pricingbox .numbox h2{
@@ -1239,6 +1212,9 @@ display:block;
 .pricing .plans .pricingbox ul li:nth-last-child(1){
     width: 100%;
 }
+
+/* :not(:last-child) */
+
 .pricing .pricingbox button{
 cursor: pointer;
 border: 2px solid var(--main-color);
@@ -1246,9 +1222,38 @@ background-color: transparent;
 color:purple;
 padding: 20px ;
 margin: 8% 0;
+/* width: fit-content; */
 }
 
+/* ---------------------------------------------------------------------------- */
 
+.pricing .pricisubscripbox{
+    margin: var(--sectionMargin);
+    height:40vh;
+    width: 100%;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    background-image: url(../img/18.jpg);
+    background-size: cover;
+    /* filter:grayscale(50%) ;
+    -webkit-filter:grayscale(50%) ; */
+}
+.pricing .pricisubscripbox::before{
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+background-color:rgba(37, 42, 44, 0.5);
+}
+/* .pricing .container .pricisubscripbox img{
+width: 100%;
+height: 88vh;
+} */
 
 .pricing  .pricisubscripbox .container{
 display: flex;
@@ -1256,6 +1261,15 @@ align-items: center;
 justify-content:space-between;
 /* width:88%; */
 /* margin: 3%; */
+/* position: relative; */
+}
+/* screens after mop */
+@media (max-width:991px) {
+
+    .pricing  .pricisubscripbox .container{
+        flex-direction: column;
+    } 
+    
 }
 .pricing .pricisubscripbox .inputsubs{
 position: relative;
