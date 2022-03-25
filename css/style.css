@@ -1180,7 +1180,6 @@ background-color:rgba(37, 42, 44, 0.5);
 width: 100%;
 height: 88vh;
 } */
-
 .pricing .container .plans{
     /* display: flex;
     justify-content: center;
@@ -1189,35 +1188,65 @@ height: 88vh;
     display: grid;
     grid-template-columns: repeat(auto-fill , minmax(250px , 1fr));
     gap:30px;
+    margin: 4% 0;
 }
-
-.pricing .container .pricingbox {
-
-background-color: rgb(201, 200, 200);
-padding: 4%;
+.pricing .container .plans .pricingbox {
+    background-color: rgb(240, 240, 240);
+/* padding: 4%; */
 /* margin: 1%; */
 /* width: 20%; */
 }
-
-.pricing .pricingbox .numbox{
+.pricing  .plans .pricingbox .numbox{
+border-bottom: 1px solid var(--main-color);
+border-top:1px solid var(--main-color) ;
+padding: 5% 0;
+text-align: center;
+position: relative;
 
 }
-
-.pricing .pricingbox ul{
-
+.pricing  .plans .pricingbox .numbox span{
+/* position: absolute; */
+text-align: center;
+font-size: 22px;
+display:block;
 }
+.pricing  .plans .pricingbox .numbox small{
+    position: absolute;
+    top: 40px;
+    left: 44px;
+    font-size: 22px;
+}
+.pricing  .plans .pricingbox .numbox h2{
+    text-align: center;
 
+    /* position: relative; */
+    font-size: 44px;
+    display: inline-block;
+    padding: 4% 0;
+}
+.pricing  .plans .pricingbox .numbox .mo{
+    display: inline-block;
+}
+.pricing .plans .pricingbox ul{
+    padding: 4% 0;
+}
+.pricing .plans .pricingbox ul li{
+    padding:8% 0;
+    border-bottom: 1px solid var(--main-color);
+    width: 50%;
+    margin: auto;
+}
+.pricing .plans .pricingbox ul li:nth-last-child(1){
+    width: 100%;
+}
 .pricing .pricingbox button{
-    cursor: pointer;
+cursor: pointer;
 border: 2px solid var(--main-color);
 background-color: transparent;
 color:purple;
-margin: 2%;
+padding: 20px ;
+margin: 8% 0;
 }
-
-
-
-
 
 
 
