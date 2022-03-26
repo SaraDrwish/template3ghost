@@ -1,7 +1,7 @@
 /* start variabels */
 :root{
     --main-color: #19c8fa;
-    --transpatent-color:rgb(15 116 143 / 70%);
+    --transpatent-color:rgba(12, 102, 128, 0.801);
     --sectionMargin : 5% 0 ;
 }
 /* end variabels */
@@ -1369,4 +1369,127 @@ text-align: left
 /* end pricing */
 
 
+
+
+/* start contact */
+
+.contact{
+   
+}
+.contact .container{
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
+
+}
+.contact form{
+display: flex;
+padding: 2%;
+/* justify-content: center; */
+/* align-items: center; */
+flex-direction: column;
+width:calc(100% - 30%);
+}
+.contact input ,.contact form textarea {
+   border: 1px solid lightgray;
+   padding: 3%;
+   margin: 2% 0;
+   outline: none;
+}
+.contact input::placeholder ,.contact form textarea::placeholder {
+   text-transform: capitalize;
+ }
+.contact input[type = button]{
+width: 20%;
+ border: none;
+ background-color: #19c8fa;
+ color: white;
+ padding: 2.8% 0;
+ text-transform: uppercase;
+}
+.contact .smallrightbox{
+    width:20%;
+   display: flex;
+   flex-direction: column;
+   /* align-items: center; */
+   justify-content: center;
+
+}
+.contact .smallrightbox .up{
+
+}
+.contact .smallrightbox .up li{
+
+}
+.contact .smallrightbox .don{
+
+}
+.contact .smallrightbox .don li{
+
+}
+
+/* end conract */
+
+
+
+/* start footer */
+
+footer{
+    margin: var(--sectionMargin);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url(../img/7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 3%;
+    margin-bottom: 0;
+}
+footer::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.795);
+}
+.footerbox{
+position: relative;
+color: white;
+}
+.footerbox img{
+    margin-bottom: 22%;
+}
+.footerbox ul{
+display: flex;
+justify-content: space-around;
+align-items: center;
+/* margin: 2% 0; */
+margin-bottom: 22%;
+margin-top: 8%;
+padding: 4%;
+/* border-top: 1px solid white; */
+}
+.footerbox i{
+    /* color: white; */
+    font-size: 17px;
+}
+.footerbox h4{
+padding:4% 1% 10% 1%;
+margin: 2% 0;
+font-size: 22px;
+/* width: fit-content; */
+/* width: 180px; */
+text-align: center;
+font-weight: normal;
+/* color: white; */
+text-transform: uppercase;
+border-bottom: 1px solid white;
+}
+.footerbox a{
+color: #19c8fa;
+}
+
+/* end footer */
 
