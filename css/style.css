@@ -241,7 +241,6 @@ header  nav .toogooicon {
 
 
 
-
 /* start landing */
 
 .landing{
@@ -369,9 +368,6 @@ background-color: #d4edf5;
 
 
 
-
-
-
 /* ===================== */
 /* start componant 1 h */
 
@@ -427,8 +423,6 @@ background-color: #d4edf5;
     /* end componant 1 h */
 
 /* ==================== */
-
-
 
 
 
@@ -489,6 +483,7 @@ max-width: 100%;
 /* عشان في الموب ميطلعش برا المسافه بتاعته */
 line-height: 2;
 color: #777;
+font-size: 17px;
     
 }
 
@@ -1135,11 +1130,13 @@ flex-wrap: wrap;
 justify-content: center;
 align-items: center; */
 }
-
 .pricing .container{
     text-align: center;
 }
-
+.pricing .mainHeadingFixd p{
+    font-size: 17px !important;
+}
+/* :not(.mainHeadingFixd p) */
 .pricing .container p{
 padding: 2%;
 font-size: 19px;
@@ -1254,11 +1251,11 @@ background-color:rgba(37, 42, 44, 0.5);
 width: 100%;
 height: 88vh;
 } */
-
 .pricing  .pricisubscripbox .container{
 display: flex;
 align-items: center;
 justify-content:space-between;
+color: white;
 /* width:88%; */
 /* margin: 3%; */
 /* position: relative; */
@@ -1271,20 +1268,16 @@ justify-content:space-between;
     } 
     
 }
-
 /* form{
     display: flex;
     width: 500px;
     min-width:100%;
 position:relative;
 }
-
 input[type= "email"]{
 padding:20px;
 border:1px solid;
 }
-
-
 */
 
 .pricing .pricisubscripbox .inputsubs{
@@ -1472,6 +1465,7 @@ margin: 8% 0 33% 0;
         }
         .contact .smallrightbox{
             order: 1;
+            /* order:-1; */
             flex-basis: 100%;
             text-align: center;
             justify-content: center;
@@ -1489,7 +1483,6 @@ margin: 8% 0 33% 0;
 }
 
 /* end conract */
-
 
 
 /* start footer */
@@ -1525,14 +1518,11 @@ color: white;
 display: flex;
 justify-content: space-around;
 align-items: center;
-/* margin: 2% 0; */
 margin-bottom: 22%;
 margin-top: 8%;
 padding: 4%;
-/* border-top: 1px solid white; */
 }
 .footerbox i{
-    /* color: white; */
     font-size: 17px;
 }
 .footerbox h4{
@@ -1540,10 +1530,8 @@ padding:4% 1% 10% 1%;
 margin: 2% 0;
 font-size: 22px;
 /* width: fit-content; */
-/* width: 180px; */
 text-align: center;
 font-weight: normal;
-/* color: white; */
 text-transform: uppercase;
 border-bottom: 1px solid white;
 }
