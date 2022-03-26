@@ -1379,10 +1379,14 @@ margin-bottom:0;
 padding-bottom: 0;
 }
 .contact .container{
-    display: flex;
-    justify-content: space-around;
+    /* display: flex;
+    justify-content: space-around; */
     /* flex-direction: column; */
 /* margin-bottom: 0; */
+}
+.contact .content {
+    display: flex;
+    justify-content: space-between;
 }
 .contact form{
 display: flex;
@@ -1392,33 +1396,31 @@ display: flex;
 flex-direction: column;
 /* width:calc(100% - 28%); */
 flex-basis: 70%;
-
 }
+/* .contact input:focus{
+    outline: none;
+} */
 .contact input ,.contact form textarea {
    border: 1px solid lightgray;
    padding: 2%;
    margin: 2% 0;
    outline: none;
    caret-color: var(--main-color);
-   color: #19c8fa;    
+   color: #19c8fa;  
+   width: 100%;  
 }
-/* .contact input:nth-child(4){
-    display: flex;
-    align-items: flex-start;
-    justify-content: right;
-    text-align: right;
-} */
 .contact input::placeholder ,.contact form textarea::placeholder {
    text-transform: capitalize;
  }
-.contact input[type = button]{
-/* width: 20%; */
-justify-content: right;
+.contact input[type="submit"]{
+width:unset;
+/* justify-content: right; */
  border: none;
  background-color: #19c8fa;
  color: white;
  padding: 2.8% 0;
  text-transform: uppercase;
+ cursor: pointer
 }
 .contact .smallrightbox{
     /* width:20%; */
@@ -1429,11 +1431,9 @@ justify-content: right;
    margin-top: 0;
    padding-top: 0;
    justify-content:flex-start;
-   /* padding: 2% 0; */
-   /* text-align: left; */
 }
 .contact .smallrightbox h4{
-   margin-bottom: 20%;
+   margin-bottom: 18%;
    font-size: 20px;
    font-weight: normal;
    margin-top: 0;
@@ -1448,27 +1448,43 @@ letter-spacing: 1.1px;
 .contact .smallrightbox .up{
 margin: 8% 0 33% 0;
 }
-
 @media (max-width:767px) {
   
-
-    .contact .container{
-        flex-direction: row;
+    .contact .content{
+        display: flex;
+        flex-wrap: wrap;
         flex-basis: 100%;
-        justify-content: center;
+        flex-direction: column;
+    }
+    .contact .container{
+        width: 100%;
+        flex-basis: 100%;
     }
     .contact form{
+        flex-wrap: wrap;
        width: 100%;
-       /* flex-basis: 100%; */
+       flex-basis: 100%;
+       order: 2;
+       margin-bottom:11%;
         }
         .contact form input , .contact form textarea {
-            /* flex-direction: row; */
+            width: 100%;
         }
         .contact .smallrightbox{
-            width:100%;
-            /* flex-basis: 100%; */
-            /* flex-direction: row; */
+            order: 1;
+            flex-basis: 100%;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin: 11% ;
         }
+        .contact .smallrightbox .up{
+            margin:4%;
+            padding: 1%;
+            }
+            .contact .smallrightbox h4{
+                margin-bottom: 14%;
+            }
     
 }
 
