@@ -1365,9 +1365,7 @@ text-align: left
 }
 
 
-
 /* end pricing */
-
 
 
 
@@ -1376,31 +1374,46 @@ text-align: left
 .contact{
    
 }
+.contact .mainHeadingFixd{
+margin-bottom:0;
+padding-bottom: 0;
+}
 .contact .container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     /* flex-direction: column; */
-
+/* margin-bottom: 0; */
 }
 .contact form{
 display: flex;
-padding: 2%;
+/* padding: 2%; */
 /* justify-content: center; */
 /* align-items: center; */
 flex-direction: column;
-width:calc(100% - 30%);
+/* width:calc(100% - 28%); */
+flex-basis: 70%;
+
 }
 .contact input ,.contact form textarea {
    border: 1px solid lightgray;
-   padding: 3%;
+   padding: 2%;
    margin: 2% 0;
    outline: none;
+   caret-color: var(--main-color);
+   color: #19c8fa;    
 }
+/* .contact input:nth-child(4){
+    display: flex;
+    align-items: flex-start;
+    justify-content: right;
+    text-align: right;
+} */
 .contact input::placeholder ,.contact form textarea::placeholder {
    text-transform: capitalize;
  }
 .contact input[type = button]{
-width: 20%;
+/* width: 20%; */
+justify-content: right;
  border: none;
  background-color: #19c8fa;
  color: white;
@@ -1408,24 +1421,55 @@ width: 20%;
  text-transform: uppercase;
 }
 .contact .smallrightbox{
-    width:20%;
+    /* width:20%; */
+    flex-basis: 20%;
    display: flex;
    flex-direction: column;
-   /* align-items: center; */
-   justify-content: center;
-
+   align-items: flex-start;
+   margin-top: 0;
+   padding-top: 0;
+   justify-content:flex-start;
+   /* padding: 2% 0; */
+   /* text-align: left; */
+}
+.contact .smallrightbox h4{
+   margin-bottom: 20%;
+   font-size: 20px;
+   font-weight: normal;
+   margin-top: 0;
+   padding-top: 0;
+}
+.contact .smallrightbox li{
+color: #777;
+font-size: 17px;
+line-height:2;
+letter-spacing: 1.1px;
 }
 .contact .smallrightbox .up{
-
+margin: 8% 0 33% 0;
 }
-.contact .smallrightbox .up li{
 
-}
-.contact .smallrightbox .don{
+@media (max-width:767px) {
+  
 
-}
-.contact .smallrightbox .don li{
-
+    .contact .container{
+        flex-direction: row;
+        flex-basis: 100%;
+        justify-content: center;
+    }
+    .contact form{
+       width: 100%;
+       /* flex-basis: 100%; */
+        }
+        .contact form input , .contact form textarea {
+            /* flex-direction: row; */
+        }
+        .contact .smallrightbox{
+            width:100%;
+            /* flex-basis: 100%; */
+            /* flex-direction: row; */
+        }
+    
 }
 
 /* end conract */
